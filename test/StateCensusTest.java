@@ -25,7 +25,7 @@ public class StateCensusTest {
 	public void csvFile_with_incorrect_data_raises_Exception() {
 		try {
 			CensusAnalyser analyser = new CensusAnalyser(
-					"/Users/jayeshkumar/learning_path/BATCH51/git_part/statecensusanalysis/data/StateCensusData1.csv");
+					"u/Users/farazshabbir/eclipse-workspace/census/src/Data/IncorrectCensusData.csv");
 			analyser.readStateRecord();
 		} catch (MyException e) {
 			Assert.assertEquals("File not found", e.getMessage());
